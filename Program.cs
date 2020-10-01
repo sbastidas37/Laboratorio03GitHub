@@ -12,8 +12,11 @@ namespace Laboratorio03GitHub
             /*Capturo los datos (nombre y fecha) en unas variables*/
             var name = Console.ReadLine();
             var date = DateTime.Now;
+            /*Imprimir los resultados por pantalla*/
+            Console.WriteLine($"\nHello, {name}, on {date:d} at {date:t}!");
+            Console.WriteLine("\nPress any key to exit...");
+            Console.ReadKey(true);
 
-            Console.WriteLine("Su nombre es " + name + " la fecha de hoy es " + date);
         }
     }
 }
